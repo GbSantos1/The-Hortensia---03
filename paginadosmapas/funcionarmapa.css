@@ -1,0 +1,13 @@
+.asidemain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    height: fit-content;
+}
+
+main iframe {
+    margin-top: 12vh;
+    margin-left: 5vw;
+    
+}

@@ -1,0 +1,274 @@
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/backgroundpaginadoacao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2vw;
+    font-size: 3vh;
+    color: white
+}
+
+.form {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #304E42;
+    margin-left: 50vw;
+    margin-bottom: 30vh;
+    border-radius: 2.2vh;
+    width: 34vw;
+    height: 35vh;
+    text-align: start;
+    padding: 4vh;
+    font-size: 3vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#titulo {
+    font-size: 4vh;
+    padding-top: 4vh;
+}
+
+.textos {padding-top: 1vh;
+
+}
+
+#titulo-1 {
+    font-size: 2.5vh;
+    margin-left: 0.2vh;
+}
+
+#titulo-2 {
+    font-size: 2.5vh;
+    margin-left: 0.2vh;
+}
+
+button {
+    height: 6vh;
+    width: 17vw;
+    border-radius: 1vh;
+    color: white;
+    background-color: #579B80;
+    border-color: transparent;
+    font-size: 2.7vh;
+    align-items: center;
+    margin-left: 12vh;
+    margin-top: 4vh;
+}
+
+input{
+    font-size: 8px;
+}
+
+@media screen and (max-width: 1273px) {
+    .form {
+        width: 50%;
+        margin-left: 25vw;
+        margin-right: 25vw;    
+    }
+
+    button {
+        margin-left: 21vh
+}
+}
+
+@media screen and (max-width: 1103px) {
+    .form {
+        width: 70%;
+        margin-left: 14vw;   
+    }
+
+    button {
+        margin-left: 27vh
+}
+}
+
+@media screen and (max-width: 975px) {
+    .form {
+        width: 70%;
+        margin-left: 15vw;   
+    }
+
+    button {
+        height: 5vh;
+        width: 20vw;
+        margin-left: 24vh;
+        margin-top: 4vh;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .form {
+        width: 70%;
+        margin-left: 14vw;   
+    }
+
+    button {
+        height: 5vh;
+        width: 20vw;
+        margin-left: 19vh;
+        margin-top: 4vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .form {
+        width: 75%;
+        margin-left: 9vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 30vw;
+        margin-left: 15vh;
+        margin-top: 4vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .form {
+        width: 75%;
+        margin-left: 9vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 30vw;
+        margin-left: 10vh;
+        margin-top: 4vh;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .form {
+        width: 75%;
+        margin-left: 9vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 30vw;
+        margin-left: 10vh;
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .form {
+        width: 75%;
+        margin-left: 10vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 38vw;
+        margin-left: 8vh;
+        margin-top: 1vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    #titulo{
+        padding-top: 1vh;
+    }
+
+    svg {
+        width: 20px;
+    }
+
+    .form {
+        width: 75%;
+        margin-left: 10vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 50vw;
+        margin-left: 6vh;
+        margin-top: 3vh;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+
+    #titulo{
+        padding-top: 1vh;
+    }
+
+    svg {
+        width: 20px;
+    }
+
+    .form {
+        width: 75%;
+        margin-left: 10vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 50vw;
+        margin-left: 6vh;
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-width: 315px) {
+
+    #titulo{
+        padding-top: 1vh;
+    }
+
+    svg {
+        width: 20px;
+    }
+
+    .form {
+        width: 75%;
+        margin-left: 10vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 50vw;
+        margin-left: 6vh;
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 290px) {
+
+    #titulo{
+        padding-top: 1vh;
+    }
+
+    svg {
+        width: 20px;
+    }
+
+    .form {
+        width: 75%;
+        margin-left: 10vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 50vw;
+        margin-left: 6vh;
+        margin-top: 1vh;
+    }
+}
+
+

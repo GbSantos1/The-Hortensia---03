@@ -1,0 +1,120 @@
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/backgroundpaginadoacao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2vw;
+    font-size: 3vh;
+    color: white
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #304E42;
+    margin-left: 45vw;
+    border-radius: 2.2vh;
+    width: 35vw;
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.form-header {
+    margin-bottom: 3vh;
+    display: inline-block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 13vh;
+}
+
+#titulo-1 {
+    text-align: start;
+    font-size: 4vh;
+    margin-left: 2.5vw;
+}
+
+#titulo-2 {
+    text-align: start;
+    margin-left: 2.5vw;
+    font-size: 2vh;
+}
+
+#titulo-3 {
+    text-align: start;
+    margin-left: 2.5vw;
+    font-size: 2vh;
+}
+
+.input-group {
+    padding: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+}
+
+input{
+    background-color: #1D3028;
+    border: hidden;
+    border-radius: 1vh;
+    width: 30vw;
+    height: 6.5vh;
+    font-size: 3.1vh;
+    color: white;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 2.5vh;
+    padding: 1.5vh;
+}
+
+select {
+    background-color: #1D3028;
+    width: 30vw;
+    height: 6.5vh;
+    border-radius: 1vh;
+    border-color: transparent;
+    border-style: ridge;
+    font-size: 2.5vh;
+    color: white;
+    padding: 1.4vh;
+}
+
+#botao1 {
+    height: 6vh;
+    width: 17vw;
+    border-radius: 1vh;
+    color: white;
+    background-color: #579B80;
+    border-color: transparent;
+    font-size: 2.7vh;
+    align-items: center;
+}
+
+.botao-1 {
+    margin-left: 9vw;
+    margin-top: 4vh;
+}

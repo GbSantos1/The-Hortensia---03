@@ -1,0 +1,373 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+body{
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #304E42;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+ul.nav a, ul.nav{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    justify-content: space-between;
+    align-items: baseline;
+    
+
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-weight: normal;
+}
+
+.Login{
+    background-color: #1B2D26;
+    width: 13vw;
+    height: 4.5vh;
+    border-radius: 0.3vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.menu-login{
+    position: absolute;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    background-color: #1B2D26;
+
+    height: 10vh;
+    width: 12vw;
+    border-radius: 1vh;
+
+    margin-top: 13.5vh;
+
+    z-index: 20;
+}
+
+.menu-login li{
+    margin-top: 1vh;
+
+    font-weight: normal;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.475s;
+
+    list-style-type: disc;
+}
+
+/* ============================= */
+
+/* Efeito dropdown */
+
+.Login:hover .menu-login{
+    display: block;
+}
+
+li a{
+    position: relative;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.inicio::after, .mapa::after, .doa::after, .sobre::after, .dicas::after{
+    content: " ";
+    width: 0%;
+    height: 0.2vh;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: 0.2s ease-in-out;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+/* Efeitos */
+
+.TUDO {
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    width: 100%;
+}
+
+section h4 {
+    width: 60vw;
+
+    font-weight: normal;
+    text-align: justify;
+}
+
+.texto2 {
+    box-sizing: border-box;
+    width: 70vw;
+}
+
+.texto3 {
+    box-sizing: border-box;
+    width: 70vw;
+}
+
+.imagem-1{
+   background-image: url("./assets/horta.jpg");     
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.imagem-2{
+   background-image: url("./assets/content_canva_fucam.jpeg");    
+   background-size: cover;
+   background-repeat: no-repeat; 
+}
+
+.image{
+    height: 55vh;
+    width: 60vw;
+
+    border-radius: 8px;   
+}
+
+.foto1 {
+    margin-top: 50px;
+}
+
+a {
+    color: #38574b;
+    border-bottom: none;
+    transition: .3s;
+}
+
+a:hover {
+    color: #7ca07b;
+    border-radius: 15px;
+}
+
+/* audiodescricao */
+.audiodescricao {
+    width: 100%;
+    height: 8vh;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 3vw;
+
+    margin-top: 10vh;
+    align-self: center;
+}
+
+.audiodescricao button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #344c44;
+    color: white;
+}
+
+.audiodescricao button:hover {
+    background-color: #1a2622;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+/* audiodescricao */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    background-color: #304E42;
+    color: white;
+}
+
+
+@media screen and (max-width:428px){
+    header{
+        background-color: #304E42;
+        height: 7vh;
+        color: white;
+
+        align-items: center;
+    }
+
+    .Login:hover .menu-login{
+        display: none;
+    }
+
+    header h1{
+        font-size: 5vw;
+    }
+
+    .nav{
+        gap: 20px;
+    }
+
+    #navigation_header{
+        z-index: 3;
+
+        display: none;
+        position:absolute;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        padding-right: 20px;
+
+        background-color: #304E42;
+
+        height: 45%;
+        width: 26vw;
+        border-radius: 12px;
+
+        animation-duration: 1s;
+        margin-right: -100vw;
+    }
+
+    @keyframes showSidebar {
+        from{margin-right: -100vw;}
+        top{margin-right: 0vw;}
+    }
+
+    .Login{
+        width: 15vw;
+        height: 4.5vh;
+        border-radius: 1.2vw;
+    }
+
+    li a:hover::after{
+        width: 0;
+    }
+
+    .icon{
+        background-color: transparent;
+        width: auto;
+        border: none;
+
+        color: white;
+    }
+
+    .icon-x{
+        margin-top: -7vh;
+        background-color: transparent;
+        border: none ;
+
+        color: white;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TUDO {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 95%;
+
+        margin-top: -5vh;
+    }
+
+    .foto1 {
+        width: 100%;
+    }
+
+    .image{
+        height: 200px;
+        width: 95vw;
+    
+        border-radius: 8px;   
+    }
+
+    .imagem-2{
+        margin-top: 50px;
+    }
+
+    section h2{
+        width: 80vw;
+    }
+
+    section h4{
+        margin-left: 4vw;
+
+        width: 80vw;
+        text-align: justify;
+    }
+
+    .como-faz{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0;
+    }
+
+    .como-faz h2{
+        margin-left: -10vw;
+        width: 70vw;
+    }
+
+    .audiodescricao {
+        margin-top: 10vh;
+
+        width: 100%;
+    }
+
+    .audiodescricao button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 8px;
+        padding: 20px;
+        height: 0;
+
+        font-size: 8px;
+        font-weight: normal;
+    }
+}

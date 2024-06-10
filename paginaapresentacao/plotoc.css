@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+body{
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #EEEFF3;
+    
+}
+
+::-webkit-scrollbar {
+    width: 5px; 
+    background-color: #304E42;/* Largura da barra de rolagem */
+}
+
+
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar-thumb {
+    background-color: #34a97c; /* Cor de fundo do botão */
+    border-radius: 5px; /* Raio do botão */
+    height: 1vh;
+}
+
+.sessaosobre {
+    background-color: white;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.imagemsobre {
+    height: 50vh;
+    width: 100%;
+    
+    background: url(/imagens/paginaapre.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.topico {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    /* margin: 0% 50px 50px 0% ; */
+
+    height: fit-content;
+    width: 100%;
+
+    
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    
+
+    /* background-color: red; */
+}
+
+.imagenssobre {
+    width: 40vh;
+    height: auto;
+
+    border-radius: 40px;
+}
+.imagenssobre:hover {
+    transform: scale(1.1);
+    transform: translate(0px, -30px);
+    transition: 0.2s ease-in-out;
+}
+
+.imagensesquerda {
+    display: none;
+}
+
+.textosobre {
+    width: 50vw;
+}
+
+
+.integrantessection {
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+    padding: 5vh;
+
+    height: fit-content;
+}
+
+.integrantessection h3{
+   font-size: 20pt;
+}
+
+.integrantesinside {
+    width: 80%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.bolinha{
+    border-radius: 70%;   
+    height: 15vh;
+    width: 15vh;
+
+    background: url(../PgHome/assets/icon-perfil.png);
+    background-size: cover;
+}
+
+.bolinha:hover {
+    transform: scale(1.1);
+    transform: translate(0px, -20px);
+    transition: 0.4s ease-in-out;
+}
+
+li {
+    list-style-type: none;
+}
+
+.integrante1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.integrantes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #304E42;
+    color: white;
+}
+
+
+@media screen and (max-width: 835px){
+    .imagensesquerda {
+        display: flex;
+    }
+
+    .imagensdireita {
+        display: none;
+    }
+
+    .topico {
+        margin-bottom: 15vh;
+    }
+
+    .imagenssobre {
+        width: 30vh;
+        height: 30vh;
+        margin-top: 5vh;
+    }
+
+    .textosobre {
+        width: 40vh;
+    }
+
+}
+
+
+@media screen and (max-width: 1075px) {
+    .integrantesinside {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        height: fit-content;
+    }
+
+    .integrantes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .integrante1 {
+        margin-bottom: 6vh;
+    }
+}

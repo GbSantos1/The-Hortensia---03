@@ -1,0 +1,536 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+
+/* body{
+    display: flex;
+    flex-direction: column;
+
+} */
+
+:root {
+    /* fundo light */
+
+        /* tema fundo light mode*/
+            --light-fundo: #FFFF; 
+
+        /* textos e botões */
+            --black-texts: #000;
+            --verde-header-botoes: #304E42;
+
+        /* header */
+            --verde-header: #304E42;
+        
+        /* cards */
+            --cinza-card-horta-item: #D9D9D9;
+            --setapreta: url("../imagens/tabler--chevron-down.png") no-repeat center center; 
+
+
+    /* fundo dark */
+
+        /* tema fundo dark mode*/
+            /* --dark-fundo: #1A1A1A; */
+
+        /* textos e botões */
+            /* --black-texts-dark: #000000; */
+            /* --verde-header-botoes: #304E42; */
+
+        /* header */
+            /* --verde-header: #304E42; */
+        
+        /* cards */
+            /* --cinza-card-horta-item: #D9D9D9; */
+
+
+    /* fundo contraste */
+
+        /* tema fundo constraste */
+        /* --contraste-fundo: #000000; */
+}
+
+[data-theme="dark"] {
+      /* tema fundo light mode*/
+      --light-fundo: #1A1A1A; 
+
+      /* textos e botões */
+          --black-texts: #ffffff;
+          --verde-header-botoes: #489F7C;
+
+      /* header */
+          --verde-header: #304E42;
+      
+      /* cards */
+          --cinza-card-horta-item: #2C2C2C;
+        
+          --setapreta:url("../imagens/setabranca.png") no-repeat center center;
+
+}
+
+[data-theme="contrast"] {
+    /* tema fundo light mode*/
+    --light-fundo: #000000; 
+
+    /* textos e botões */
+        --black-texts: #000000;
+        --verde-header-botoes: #304E42;
+
+    /* header */
+        --verde-header: #304E42;
+
+    /* cards */
+        --cinza-card-horta-item: #D9D9D9;
+
+}
+
+header{
+    background-color: #304E42;
+    color: white;
+}
+
+ul.nav a, ul.nav{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    justify-content: flex-end;
+}
+
+.TODOS {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 60px;
+
+    gap: 5vh;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+
+    width: 60vw; 
+
+    box-sizing: border-box;
+
+    background-color: #304E42;
+    
+    border-radius: 10px;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 10vh;
+    width: 40vw;
+
+    gap: -2vw;
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%; /* para criar o círculo */
+    background-image: url('./assets/gastro.jfif');
+    background-size: cover;
+
+    transform: scale(70%);
+}
+
+.iden-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 9vh;
+}
+
+.cargo{
+    margin-top: -3vh;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.nome{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.texto{
+    margin: 0;
+    padding: 0;
+}
+
+.texto h2{
+    color: white;
+    font-weight: 500;
+}
+
+.texto h4{
+    color: white;
+    font-weight: 300;
+
+    margin-bottom: 5vh;
+}
+
+
+input{
+    background-color: white;
+    border-style: none;
+    border-radius: 7px;
+    padding-left: 1vw;
+
+    height: 6vh;
+    width: 18vw;
+}
+
+
+.foto-nutri {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%; /* para criar o círculo */
+    background-image: url('./assets/nutri.jfif');
+    background-size: cover;
+
+    transform: scale(70%);
+}
+
+.foto-f {
+    width: 100px;
+    height: 100px;
+
+    
+    border-radius: 100%; /* para criar o círculo */
+    background-image: url('./assets/feirantee.jpeg');
+    background-size: cover;
+
+    transform: scale(70%);
+}
+
+.foto-agr {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%; /* para criar o círculo */
+    background-image: url('./assets/agr.jpg');
+    background-size: cover;
+
+    transform: scale(70%);
+}
+
+
+
+.container-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 60px;
+    padding: 5px;
+
+    gap: 2vh;
+
+    background-color: #304E42;
+
+    width: 40vw;
+
+    border-radius: 10px;
+}
+
+.container-enviar h2{
+    font-weight: 500;
+    color: white;
+}
+
+.container-enviar h3{
+    margin-top: -5vh;
+
+    font-weight: 300;
+    color: white;
+}
+   
+
+.container-enviar button {
+    margin-bottom: 3vh;
+
+    width: 10vw;
+    padding: 10px;
+
+
+    border-style: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    
+    background-color: #1f312a;
+    color: white;
+}
+
+.container-enviar input{
+    width: 30vw;
+
+    border: none;
+    outline: none;
+
+    cursor: text;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #304E42;
+    color: white;
+}
+
+
+@media screen and (max-width:428px){
+    nav responsiva 
+
+header{
+        background-color: #304E42;
+        height: 7vh;
+        color: white;
+
+        align-items: center;
+    }
+
+    .Login:hover .menu-login{
+        display: none;
+    }
+
+    header h1{
+        font-size: 5vw;
+    }
+
+    .nav{
+        gap: 20px;
+    }
+
+    #navigation_header{
+        z-index: 3;
+
+        display: none;
+        position:absolute;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        padding-right: 20px;
+
+        background-color: #304E42;
+
+        height: 45%;
+        width: 26vw;
+        border-radius: 12px;
+
+        animation-duration: 1s;
+        margin-right: -100vw;
+    }
+
+    @keyframes showSidebar {
+        from{margin-right: -100vw;}
+        top{margin-right: 0vw;}
+    }
+
+    .Login{
+        width: 15vw;
+        height: 4.5vh;
+        border-radius: 1.2vw;
+    }
+
+    li a:hover::after{
+        width: 0;
+    }
+
+    .icon{
+        background-color: transparent;
+        border: none;
+        width: auto;
+
+        color: white;
+    }
+
+    .icon-x{
+        margin-top: -3vh;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+
+/* AQUI */
+
+    .TODOS{
+        align-items: center;
+
+        margin-top: 70px;
+
+        gap: 5vh;
+    }
+
+    .foto {
+        width: 100px;
+        height: 100px;
+    
+        border-radius: 100%; /* para criar o círculo */
+        background-image: url('./assets/gastro.jfif');
+        background-size: cover;
+    
+        transform: scale(60%);
+    }
+
+    .foto-nutri {
+        width: 100px;
+        height: 100px;
+    
+        border-radius: 100%; /* para criar o círculo */
+        background-image: url('./assets/nutri.jfif');
+        background-size: cover;
+    
+        transform: scale(60%);
+    }
+    
+    .foto-f {
+        width: 100px;
+        height: 100px;
+    
+        
+        border-radius: 100%; /* para criar o círculo */
+        background-image: url('./assets/feirantee.jpeg');
+        background-size: cover;
+    
+        transform: scale(60%);
+    }
+    
+    .foto-agr {
+        width: 100px;
+        height: 100px;
+    
+        border-radius: 100%; /* para criar o círculo */
+        background-image: url('./assets/agr.jpg');
+        background-size: cover;
+    
+        transform: scale(60%);
+    }
+
+    .comentario {
+        padding: 10px;
+
+        width: 90vw; 
+
+        box-sizing: border-box;
+
+        background-color: #304E42;
+        
+        border-radius: 10px;
+
+        transform: scale(100%);
+    }
+
+    .usuario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        height: 10vh;
+        width: 85vw;
+    
+        gap: -2vw;
+    }
+
+    .cargo{
+        margin-top: -2vh;
+    }
+
+    .texto h2{
+        margin-left: 10px;
+
+        font-size: 19px;
+    }
+
+    .texto h4{
+        width: 80vw;
+
+        text-align: justify;
+        font-size: 15px;
+        
+        margin-left: 10px;
+    }
+
+    .container-enviar{
+        margin: 20px;
+        padding: 5px;
+    
+        gap: 2vh;
+        
+        width: 75vw;
+    }
+
+    .container-enviar h2{
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .container-enviar h3{
+        margin-top: -4vh;
+    
+        font-weight: 300;
+        font-size: 17px;
+        color: white;
+    }
+       
+    
+    .container-enviar button {
+        margin-bottom: 3vh;
+    
+        width: 35vw;
+        padding: 8px;
+    
+    
+        border-style: none;
+        border-radius: 5px;
+    
+        cursor: pointer;
+        
+        background-color: #1f312a;
+        color: white;
+    }
+    
+    .container-enviar input{
+        width: 55vw;
+    
+        border: none;
+        outline: none;
+    }
+}

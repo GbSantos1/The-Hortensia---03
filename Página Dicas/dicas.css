@@ -1,0 +1,275 @@
+/* 
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+body{
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ */
+
+ 
+:root {
+    /* fundo light */
+
+        /* tema fundo light mode*/
+            --light-fundo: #FFFF; 
+
+        /* textos e botões */
+            --black-texts: #000;
+            --verde-header-botoes: #304E42;
+
+        /* header */
+            --verde-header: #304E42;
+        
+        /* cards */
+            --cinza-card-horta-item: #D9D9D9;
+            --setapreta: url("../imagens/tabler--chevron-down.png") no-repeat center center; 
+
+
+    /* fundo dark */
+
+        /* tema fundo dark mode*/
+            /* --dark-fundo: #1A1A1A; */
+
+        /* textos e botões */
+            /* --black-texts-dark: #000000; */
+            /* --verde-header-botoes: #304E42; */
+
+        /* header */
+            /* --verde-header: #304E42; */
+        
+        /* cards */
+            /* --cinza-card-horta-item: #D9D9D9; */
+
+
+    /* fundo contraste */
+
+        /* tema fundo constraste */
+        /* --contraste-fundo: #000000; */
+}
+
+[data-theme="dark"] {
+      /* tema fundo light mode*/
+      --light-fundo: #1A1A1A; 
+
+      /* textos e botões */
+          --black-texts: #ffffff;
+          --verde-header-botoes: #489F7C;
+
+      /* header */
+          --verde-header: #304E42;
+      
+      /* cards */
+          --cinza-card-horta-item: #2C2C2C;
+        
+          --setapreta:url("../imagens/setabranca.png") no-repeat center center;
+
+}
+
+[data-theme="contrast"] {
+    /* tema fundo light mode*/
+    --light-fundo: #000000; 
+
+    /* textos e botões */
+        --black-texts: #000000;
+        --verde-header-botoes: #304E42;
+
+    /* header */
+        --verde-header: #304E42;
+
+    /* cards */
+        --cinza-card-horta-item: #D9D9D9;
+
+
+}
+
+/* PÁGINA DICAS */
+.section-dicas {
+    width: 100%;
+}
+
+.contain-dicas h1 {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contain-dicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-texto-dicas-imagem {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    color:  var(--black-texts);
+
+
+    width: 60%;
+    margin-bottom: 5vh;
+}
+
+.texto-dicas {
+    line-height: 22px;
+    margin-top: 4vh;
+    color:  var(--black-texts);
+}
+
+.imagem-dicas-format {
+    width: 100%;
+    height: 55vh;
+    border-radius: 10px;
+    /* border: 5px solid rgb(0, 0, 0); */
+}
+
+.imagem-dicas-format img {
+    width: 25rem;
+ 
+}
+
+#imagem1-dicas {
+    background: url(../imagens/horta.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+}
+
+#imagem2-dicas {
+    background: url(../imagens/content_canva_fucam.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+}
+
+/* PÁGINA DICAS */
+
+
+/* AUDIODESCRIÇÃO */
+.audiodescricao {
+    width: 100%;
+    height: 8vh;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 3vw;
+
+    margin-top: 10vh;
+    align-self: center;
+}
+
+.audiodescricao button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background-color:  var(--verde-header-botoes);
+    color: white;
+}
+
+.audiodescricao button:hover {
+    background-color: #1a2622;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+/* AUDIODESCRIÇÃO */
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.faq {
+    display: grid;
+    width: 100%;
+}
+
+.faq h1 {
+    text-align: center;
+    color:  var(--black-texts);
+}
+
+.faq-list {
+    margin: 50px auto;
+    max-width: 815px;
+    font-size: 26px;
+}
+
+.faq-question {
+    border-bottom: 2px solid var(--black-texts);
+    color:  var(--black-texts);
+}
+
+.faq-question {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+.faq-question::after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: var(--setapreta);
+    background-size: contain;
+    transform: rotate(-90deg);
+    transition: 0.3s ease-in-out;
+}
+
+.faq.faq-answer > div {
+    padding: 30px;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier (0.5, 0, 0.1, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.faq-answer.active {
+    max-height: 1200px;
+}
+
+.faq-question.active::after {
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    color:  var(--black-texts);
+}
+
+.texto-faq-perfil {
+    font-size: 0.8em;
+    margin-left: 1em;
+}
+
+.texto-faq p{
+    font-size: 0.7em;
+    color:  var(--black-texts);
+}
+
+
+.foto-perfil-faq img {
+    border-radius: 40px;
+    width: 3em;
+}

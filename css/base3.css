@@ -1,0 +1,68 @@
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/fundo-doacoes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2vw;
+    font-size: 3vh;
+    color: white
+}
+
+.form {
+    overflow-y: auto;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #304E42;
+    margin-left: 50vw;
+    margin-bottom: 30vh;
+    border-radius: 2.2vh;
+    width: 34vw;
+    height: 35vh;
+    text-align: start;
+    padding: 4vh;
+    font-size: 3vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#titulo {
+    font-size: 4vh;
+    padding-top: 4vh;
+}
+
+.textos {padding-top: 1vh;
+
+}
+
+#titulo-1 {
+    font-size: 2.5vh;
+    margin-left: 0.2vh;
+}
+
+#titulo-2 {
+    font-size: 2.5vh;
+    margin-left: 0.2vh;
+}
+
+button {
+    height: 6vh;
+    width: 17vw;
+    border-radius: 1vh;
+    color: white;
+    background-color: #579B80;
+    border-color: transparent;
+    font-size: 2.7vh;
+    align-items: center;
+    margin-left: 12vh;
+    margin-top: 4vh;
+}

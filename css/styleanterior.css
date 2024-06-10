@@ -1,0 +1,812 @@
+/* config global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+/* config global */
+
+/* HEADER E SCROLLBAR*/
+
+header {
+    width: 100%;
+    height: 9vh;
+
+    background-color: #304E42;
+    color: white;
+}
+
+.contentheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    margin: 0% 50px;
+}
+
+.logohortensia {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 10%;
+    font-size: 8pt;
+    
+}
+
+.logohortensia #logo {
+    width: 30px;
+    border-radius: 50px;
+}
+
+.ulheader {
+    list-style-type: none;
+    /* border: 1px solid blue; */
+}
+
+.ulheader li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.ulheader a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 11pt;
+}
+
+.ulheader a:hover{
+    border-bottom: 1px solid white;
+    border-radius: 1px;
+}
+
+#login{
+    background-color: #1B2D26;
+
+    padding: 10px 30px;
+
+    border-radius: 5px;
+    
+    color: white;
+
+    border: none;
+}
+
+#login:hover {
+    background-color: #34a97c;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.paradrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paradrop:hover .dropdown {
+    display: block;
+}
+
+.paradrop:hover #login {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 7vh;
+
+    display: none;
+    width: 95px;
+
+    background-color: #212E29;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdown a{
+    display: block;
+    padding: 10px;
+}
+
+.dropdown a:hover {
+    background-color: #34a97c;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 5px; 
+    background-color: #304E42;/* Largura da barra de rolagem */
+}
+
+
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar-thumb {
+    background-color: #34a97c; /* Cor de fundo do botão */
+    border-radius: 5px; /* Raio do botão */
+    height: 1vh;
+}
+
+/* HEADER */
+
+/* FOOTER */
+
+footer{
+    flex-shrink: 0;
+    background-color: #304E42;
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+/* FOOTER */
+
+
+/* página de apresentação */
+
+    .mainapresentacao{
+        background-image: url(../imagens/BACKGROUNDapresentação.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: auto;
+        height: fit-content;
+        
+
+    }.container{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .mainapresentacao{
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .card{
+        margin: 150px;
+        background-color: #304E42;
+        width: 300px;
+        height: 350px;
+        border-radius: 10px;
+        
+    }
+
+    .card>img{
+        padding-bottom: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+    .titulo{
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .botao-saibamais{
+        background-color: #55967c;
+        color: aliceblue;
+        padding: 10px 20px;
+        border: #55967c;
+        border-radius: 10px;
+        margin-left: 95px;
+        margin-top: 20px;
+        
+    }
+
+    .botao-saibamais:hover {
+        background-color: #3c6655;
+    }
+
+    .lnk{
+        text-decoration: none;
+        color: aliceblue;
+
+    }
+
+/* página de apresentação */
+
+/* PÁGINA DE DOAÇÕES - BASE 2 */
+
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainpaginadedoacoes1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/backgroundpaginadoacao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2vw;
+    font-size: 3vh;
+    color: white
+}
+
+.formpaginadedoacoes1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #304E42;
+    margin-left: 45vw;
+    border-radius: 2.2vh;
+    width: 35vw;
+    height: 65vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.form-headerdoacoes1 {
+    margin-bottom: 3vh;
+    display: inline-block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 13vh;
+    font-size: 5vh;
+    padding-left: 2.5vw;
+}
+
+#text2doacoes1 {
+    text-align: start;
+    font-size: 2vh;
+}
+
+.input-groupdoacoes1 {
+    padding: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.input-boxdoacoes1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+}
+
+.cpfdoacoes1{
+    background-color: #1D3028;
+    border: hidden;
+    border-radius: 1vh;
+    width: 30vw;
+    height: 6.5vh;
+    font-size: 3.1vh;
+    color: white;
+}
+
+.valordoacoes1{
+    background-color: #1D3028;
+    border: hidden;
+    border-radius: 1vh;
+    width: 30vw;
+    height: 6.5vh;
+    font-size: 3.1vh;
+    color: white;
+}
+
+.opcoesdoacoes1 {
+    background-color: #1D3028;
+    width: 30vw;
+    height: 6.5vh;
+    border-radius: 1vh;
+    border-color: transparent;
+    border-style: ridge;
+    font-size: 2.5vh;
+    color: white;
+    padding: 1.4vh;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cpfdoacoes1::placeholder {
+    color: white;
+    font-size: 2.5vh;
+    padding: 1.5vh;
+}
+
+.valordoacoes1::placeholder {
+    color: white;
+    font-size: 2.5vh;
+    padding: 1.5vh;
+}
+
+#botao1doacoes1 {
+    height: 6vh;
+    width: 17vw;
+    border-radius: 1vh;
+    color: white;
+    background-color: #579B80;
+    border-color: transparent;
+    font-size: 2.7vh;
+    align-items: center;
+}
+
+.botao-1doacoes1 {
+    margin-left: 9vw;
+    margin-top: 4vh;
+}
+
+@media screen and (max-width:1300px) {
+    .formpaginadedoacoes1 {
+        width: 50%;
+        margin-left: 30vw;
+    }
+
+    .cpfdoacoes1 {
+        width: 44vw;
+    }
+
+    .valordoacoes1 {
+        width: 44vw;
+    }
+
+    .opcoesdoacoes1 {
+        width: 44vw;
+    }
+
+    .botao-1doacoes1 {
+        margin-left: 16vw;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .cpfdoacoes1 {
+        width: 43vw;
+    }
+
+    .valordoacoes1 {
+        width: 43vw;
+    }
+
+    .opcoesdoacoes1 {
+        width: 43vw;
+    }
+}
+
+@media screen and (max-width:975px) {
+    .formpaginadedoacoes1 {
+        width: 50%;
+        margin-left: 30vw;
+    }
+
+    .cpfdoacoes1 {
+        width: 43vw;
+    }
+
+    .valordoacoes1 {
+        width: 43vw;
+    }
+
+    .opcoesdoacoes1 {
+        width: 43vw;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .formpaginadedoacoes1 {
+        width: 50%;
+        margin-left: 30vw;
+    }
+
+    .form-headerdoacoes1 {
+        font-size: 4vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .formpaginadedoacoes1 {
+        width: 50%;
+        margin-left: 25vw;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .formpaginadedoacoes1 {
+        width: 50%;
+        margin-left: 25vw;
+    }
+
+    .form-headerdoacoes1 {
+        margin-top: 9vh;
+        font-size: 3vh;
+}
+}
+
+@media screen and (max-width:600px) {
+    .formpaginadedoacoes1 {
+        width: 50%;
+        margin-left: 25vw;
+    }
+
+    .form-headerdoacoes1 {
+        margin-top: 9vh;
+    }
+
+    #botao1doacoes1{
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width:376px) {
+
+    .formpaginadedoacoes1 {
+        width: 80%;
+        margin-left: 10vw;
+    }
+
+    .cpfdoacoes1 {
+        width: 70vw;
+    }
+
+    .valordoacoes1 {
+        width: 70vw;
+    }
+
+    .opcoesdoacoes1 {
+        width: 70vw;
+    }
+
+    #botao1doacoes1{
+        width: 25vw;
+        margin-left: 11vw;
+    }
+}
+
+
+
+
+
+
+
+
+/* 
+#adoacaoconcluida {
+    text-decoration: none;
+    color: white;
+} */
+
+
+/* PÁGINA DE DOAÇÕES - BASE 2 */
+
+/* PÁGINA DE DOAÇÕES - BASE 3 */
+
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.maindoacaoconcluida {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(images/fundo-doacoes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2vw;
+    font-size: 3vh;
+    color: white;
+}
+
+.containallfinalizacao {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.finalizacaodoacaoconcluida {
+    display: flex;
+    flex-direction: column;
+    background-color: #304E42;
+    width: 70vh;
+    height: 40vh;
+    padding: 20px;
+    border-radius: 2.2vh;
+}
+
+.finalizacaodoacaoconcluida .textos {
+    text-align: center;
+}
+
+.final {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    padding-bottom: 5vh;
+}
+
+.finale {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 0vh;
+}
+
+.textos {
+    font-size: 3vh;
+
+}
+
+.finalizacaodoacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+#titulo {
+    font-size: 4vh;
+}
+
+
+#titulo-1 {
+    font-size: 2.5vh;
+    margin-left: 0.2vh;
+}
+
+#titulo-2 {
+    font-size: 2.5vh;
+    margin-left: 0.2vh;
+}
+
+#adoacaoconcluida {
+    height: 6vh;
+    width: 17vw;
+    border-radius: 1vh;
+    color: white;
+    background-color: #579B80;
+
+    padding: 8px;
+    /* border-color: transparent;
+    font-size: 2.7vh;
+    align-items: center;
+    margin-left: 12vh;
+    margin-top: 4vh; */
+
+    text-decoration: none;
+}
+
+#adoacaoconcluida:hover {
+    background-color: #3b6957;
+}
+
+.botao {
+    margin-bottom: 3vh;
+}
+
+
+/* PÁGINA DE DOAÇÕES - BASE 3 */
+
+/* PÁGINAS DE CADASTRO, LOGIN  */
+
+.cadastrocolaborador {
+    background: url(../imagens/backgroundcolaborador.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    height: 91vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulariocadastrocolaborador { 
+    width: 30vw;
+    height: 65vh;
+
+    padding: 30px;
+
+    background-color: #304E42;
+
+    border-radius: 10px;
+}
+
+.formulariocadastrocolaborador .insideform {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    color: white;
+    /* border: 1px solid blue; */
+
+    height: 80%;
+}
+
+.pinputs {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    /* justify-content: space-evenly; */
+}
+
+.pinputs input {
+    background-color: #1D3028;
+    color: white;
+    border: none;
+
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 2vh;
+}
+
+.pinputs input:focus {
+    outline: none;
+    background-color: #0f1915;
+}
+
+::placeholder {
+    color: #c3c3c3; /* Cor desejada para o texto do placeholder */
+}
+
+.continuarbtn {
+    background-color: #579B80;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    padding: 15px;
+
+    align-self: center;
+    text-align: center;
+
+    font-size: 11pt;
+}
+
+.continuarbtn:hover {
+    background-color: #40745f;
+    cursor: pointer;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+/* etapas js */
+
+#etapa2 {
+    display: none;
+}
+
+/* etapas js */
+
+/* PROGRESSO */
+
+.progresso {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.etapa-indicador {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#indicador1 {
+    background-color: #007bff;
+}
+
+.etapa-indicador:hover {
+    background-color: #999999;
+    cursor: pointer;
+}
+
+/* PROGRESSO */
+
+
+/* OTHER PROGRESSO */
+
+.etapas {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.continuarindicador {
+    width: 50vh;
+    height: 5vh;
+    background-color: #ccc;
+    margin-right: 10px;
+
+}
+
+#indicador1 {
+    display: none;
+    
+    background-color: #007bff00;
+    color: white;
+
+    margin-top: 2vh;
+}
+
+#indicador2 {
+    display: flex;
+    justify-content: center;
+}
+
+#indicador1:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    border-radius:1px;
+}
+
+.etapa-indicador:hover {
+    background-color: #999999;
+    cursor: pointer;
+}
+
+.svgindicadoranterior {
+    transform: rotate(-90deg);
+}
+
+/* OTHER PROGRESSO */
+
+/* PARA LOGIN */
+
+.centerbutton {
+    text-align: center;
+
+}
+
+.login {
+    height: fit-content;
+}
+
+#mensagemdeerro {
+    color: blue;
+}
+
+/* PARA LOGIN */
+
+
+/* PÁGINAS DE CADASTRO, LOGIN  */
+
+
+@media (max-width: 1075px){
+
+    /* página de apresentação */
+    .mainapresentacao {
+        flex-wrap: wrap;
+    }
+    /* página de apresentação */
+}
